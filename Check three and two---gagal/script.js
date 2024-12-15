@@ -1,12 +1,13 @@
 function checkThreeAndTwo(array) {
    let cek = 1; // Mulai dengan cek 1 untuk membandingkan dua elemen berturut-turut
-   
+   let cek2 = 1;
+
    for (let index = 0; index < array.length - 1; index++) {
       if (array[index] === array[index + 1]) {
          cek++;
-         if (cek > 3) {
-            return false; // Kembalikan false jika ada lebih dari 3 berturut-turut
-         }
+
+         if (cek > 3) return false; // Kembalikan false jika ada lebih dari 3 berturut-turut
+
       } else {
          cek = 1; // Reset cek jika elemen berturut-turut tidak sama
       }
