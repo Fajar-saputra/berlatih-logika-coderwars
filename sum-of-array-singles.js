@@ -10,6 +10,8 @@
 
 // };
 
+
+// refactor
 const repeats = (arr) => arr.filter((n) => arr.indexOf(n) !== arr.lastIndexOf(n)).reduce((a, b) => a + b, 0);
 
 console.log(repeats([4, 5, 7, 5, 4, 8, 3]));
